@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            height: 30px;
+            width:80%;
+            /* border:1px solid black */
+            background-color: gray;
+        }
+        .bar{
+            background-color: mediumseagreen;
+            height: 100%;
+            width:1%
+        }
+        button{
+            padding: 8px 15px;
+            cursor: pointer;
+            background-color: mediumseagreen;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="main" id="main">
+        <div class="bar" id="bar"></div>
+    </div><br>
+    <button id="btn">Run</button>
+    <script>
+        var bar=document.getElementById('bar')
+        var btn=document.getElementById('btn')
+        btn.addEventListener('click',btnfun)
+        i=0
+        function btnfun(){
+            setInterval(inwidth,1000)
+            var i=0
+            function inwidth(){
+                if(i=0){
+                    bar.style.width=
+                }
+            }
+        }
+    </script>
+</body>
+</html>

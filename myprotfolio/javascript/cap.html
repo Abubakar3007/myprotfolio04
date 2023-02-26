@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #para{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" value="some text here" id="inputtext">
+    <p id="para">CAPS LOCK ON</p>
+</body>
+<script>
+    var inputtext=document.getElementById('inputtext')
+    var para=document.getElementById('para')
+    inputtext.addEventListener('keyup',inputfun)
+    function inputfun(e){
+        if(e.getModifierState("CapsLock")){
+            para.style.display='block'
+        }
+        else{
+            para.style.display='none'
+        }
+    }
+</script>
+</html>

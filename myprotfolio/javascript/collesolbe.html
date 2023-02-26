@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            background-color: black;
+            width:100%;
+            position: relative;
+            margin-bottom: -15px;
+        }
+        .main h1{
+            padding: 15px;
+            font-size: 20px;
+            color:#fff
+        }
+        .main #btn{
+            position: absolute;
+            float: right;
+            right:15px;
+            top:15px;
+            cursor: pointer;
+        }
+        .para{
+            background-color: gray;
+            position: absolute;
+            /* top:10px; */
+            width:99%;
+            height: 300px;
+            display: none;
+        }
+        .para p{
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <h1>collaspble</h1>
+        <button id="btn">+</button>
+    </div>
+    <div class="para" id="para">
+        <p>Some collapsible content. Click the button to toggle between showing and hiding the collapsible content. 
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+    <script>
+        var btn=document.getElementById('btn')
+        btn.addEventListener('click',btnfun)
+        function btnfun(){
+            var para=document.getElementById('para')
+                para.style.display='block'       
+        }
+    </script>
+</body>
+</html>

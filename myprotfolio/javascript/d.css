@@ -1,0 +1,62 @@
+body{
+    box-sizing: border-box;
+}*{
+    margin:0px;
+    padding:0px
+}
+.btn button{
+    padding: 15px 30px;
+    background-color: blue;
+    border:none;
+    cursor: pointer;
+    position: relative;
+    color:#fff;
+    top:-20%;
+}
+.box{
+    background-color: darkolivegreen;
+    width:100%;
+    height: 90vh;
+    position:fixed;
+    display: none;
+}
+.in-box{
+    position: relative;
+}
+#cross{
+    position: absolute;
+    right:2%;
+    float:right;
+    font-size:50px;
+    background-color: transparent;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+.box1{
+    width:40%;
+    border: 1px solid black;
+    margin:auto;
+    padding-top: 50px;
+    background-color: aquamarine;
+    padding-bottom: 50px;
+}
+.box1 h1{
+    text-align: center;
+}
+.box1 p{
+    text-align: center;
+}
+.d-btn{
+    width:45%;
+    margin: auto;
+    display: block;
+    margin-top: 30px;
+}
+.d-btn button{
+    margin:0px 10px;
+    padding:15px 30px;
+    border:none;
+    background-color: brown;
+    cursor: pointer;
+}

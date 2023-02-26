@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input{
+            padding: 13px 5px;
+        }
+        button{
+            background-color: blue;
+            color:#fff;
+            padding: 15px 30px;
+            border:none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" id="input">
+    <button id="btn">Copy text</button>
+    <script>
+        let btn=document.getElementById('btn')
+        btn.addEventListener('click',btnclick)
+        function btnclick(){
+            var copytext=document.getElementById('input')
+            copytext.select();
+            copytext.setSelectionRange(0,9999);
+            navigator.clipboard.writeText(copytext.value);
+            alert(copytext.value)
+        }
+    </script>
+</body>
+</html>
